@@ -32,7 +32,7 @@ const router = express.Router()
 
 // INDEX, GET /entries
 router.get('/entries', requireToken, (req, res, next) => {
-  Entry.find({ owner: req.user._id })
+  Entry.find()
     .then(entries => {
       return entries.map(entry => entry.toObject())
     })
@@ -42,7 +42,8 @@ router.get('/entries', requireToken, (req, res, next) => {
 
 // SHOW, GET one entries/:id
 router.get('/entries/:id', requireToken, (req, res, next) => {
-  Entry.findById(req.params.id)
+  let search = { owner: req.user._id }
+  Entry.findById(search)
     .then(handle404)
     .then(entry => {
       requireOwnership(req, entry)
