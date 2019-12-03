@@ -42,8 +42,7 @@ router.get('/entries', requireToken, (req, res, next) => {
 
 // SHOW, GET one entries/:id
 router.get('/entries/:id', requireToken, (req, res, next) => {
-  let search = { owner: req.user._id }
-  Entry.findById(search)
+  Entry.findById(req.params.id)
     .then(handle404)
     .then(entry => {
       requireOwnership(req, entry)
