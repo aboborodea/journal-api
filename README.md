@@ -1,22 +1,26 @@
 <h1>Open Thought</h1>
 <h4>Open Thought is an online journal where you can write freely about your biggest hopes and dreams, your favorite memories, or whatever is on your mind.</h4>
 
+
 <h4>Important Links</h4>
+
 -   [Client Deployed Link](https://aboborodea.github.io/journal/)
 -   [Client GitHub Link](https://github.com/aboborodea/journal)
 -   [Backend Deployed Link](https://dry-basin-07175.herokuapp.com)
 -   [Backend GitHub Link](https://github.com/aboborodea/project_2_api)
 
+
 <h4>Technologies Used</h4>
 <ul>
-<li>Atom</li>
+<li>Express</li>
 <li>cURL</li>
 <li>Heroku</li>
 <li>Postman</li>
 <li>PostgreSQL</li>
 <li>GitHub</li>
-<li>Express</li>
+<li>Atom</li>
 </ul>
+
 
 <h4>Document Planning</h4>
   <p>
@@ -28,6 +32,7 @@
 
   Once my backend was up and running, I moved onto my client facing application. I used React and its component based framework to build out a structure for my program. I created individual components for each CRUD action on journal entries and tested each with curlscripts. From here, I started to add content to the page with a combination of newly learned JSX, React, and CSS. I added web page functionality for a user to be able to create, update, view (one and all entries), and delete an entry.
   </p>
+
 
 <h4>User Stories</h4>
 <ul>
@@ -41,8 +46,22 @@
 <li>As a signed in user, I would like to see all my journal entries.</li>
 </ul>
 
-<h4>Wireframes & ERDs</h4>
-<img src="public/Wireframes.png">
 
-<h4>Unsolved Problems & Strech Goals</h4>
-<p>I hope to make this application more of a social experience, where users can interact with one another through their posts. I intend to make this happen by opening up access and permission to journal entries in the backend. On the client side, I would love to include an ability to add tags to posts, making searchability by keyword a possibility.</p>
+<h4>Wireframes & ERDs</h4>
+<img src="images/Wireframes&erds.png">
+
+
+<h4>Routes</h4>
+<img src="images/resourceroutes.png">
+
+
+<h4>Setup Instructions</h4>
+<ul>
+  <li>Clone/download this repository</li>
+  <li>Install dependencies</li>
+  <li>Use npm start to run on local server</li>
+</ul>
+
+
+<h4>Unsolved Problems & Stretch Goals</h4>
+<p>I hope to make this application more of a social experience, where users can interact with one another through their posts. I intend to make this happen by opening up access and permission to journal entries in the backend. On the client side, I would love to include an ability to add tags to posts, making searchability by keyword possible.</p>
