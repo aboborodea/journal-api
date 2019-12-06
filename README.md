@@ -7,7 +7,7 @@
 -   [Client Deployed Link](https://aboborodea.github.io/journal/)
 -   [Client GitHub Link](https://github.com/aboborodea/journal)
 -   [Backend Deployed Link](https://dry-basin-07175.herokuapp.com)
--   [Backend GitHub Link](https://github.com/aboborodea/project_2_api)
+-   [Backend GitHub Link](https://github.com/aboborodea/journal-api)
 
 
 <h4>Technologies Used</h4>
@@ -45,11 +45,6 @@
 <li>As a signed in user, I would like to delete a journal entry.</li>
 <li>As a signed in user, I would like to see all my journal entries.</li>
 </ul>
-
-
-<h4>Wireframes & ERDs</h4>
-<img src="images/Wireframes&erds.png">
-
 
 <h4>Routes</h4>
 <img src="images/resourceroutes.png">
