@@ -80,7 +80,7 @@ router.delete('/entries/:id', requireToken, (req, res, next) => {
   Entry.findById(req.params.id)
     .then(handle404)
     .then(entry => {
-      // requireOwnership(req, entry)
+      requireOwnership(req, entry)
       entry.deleteOne()
     })
     .then(() => res.sendStatus(204))
